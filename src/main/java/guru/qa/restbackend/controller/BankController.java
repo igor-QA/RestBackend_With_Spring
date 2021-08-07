@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @RestController
 public class BankController{
 
-    private HashMap<String, ClientInfo> client = new HashMap<>();
+    private final HashMap<String, ClientInfo> client = new HashMap<>();
 
     {
         client.put("Maksim", ClientInfo.builder().clientNikName("Mashut").build());
@@ -45,8 +45,5 @@ public class BankController{
                 .stream()
                 .map(Map.Entry::getValue)
                 .collect(Collectors.toList());
-
-
     }
-
 }

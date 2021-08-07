@@ -31,5 +31,4 @@ public class RestBackendApplication {
                 .paths(PathSelectors.any())
                 .build();
     }
-
 }
